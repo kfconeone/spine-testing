@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spine Testing</title>
+  </head>
+  <body>
+    <div id="player-container"></div>
+    <script src="http://esotericsoftware.com/files/spine-player/4.0/spine-player.js"></script>
+    <link
+      rel="stylesheet"
+      href="http://esotericsoftware.com/files/spine-player/4.0/spine-player.css"
+    />
+
+    <script>
+      new spine.SpinePlayer("player-container", {
+        jsonUrl: "skeleton.json",
+        atlasUrl: "skeleton.atlas",
+        showControls: true,
+        backgroundColor: "#00000000",
+        alpha: true,
+        // Added:
+        success: function (player) {
+          // console.log(player);
+          // player.animationState.addListener({
+          //   event: function (t: any) {
+          //     switch (t.animation.name) {
+          //       case "surf":
+          //         player.animationState.setAnimation(0, "jump", true);
+          //         onToOff();
+          //         break;
+          //       case "jump":
+          //         player.animationState.setAnimation(0, "Skateboard", true);
+          //         break;
+          //       case "jump2":
+          //         player.animationState.setAnimation(0, "surf", true);
+          //         break;
+          //       case "Skateboard":
+          //         player.animationState.setAnimation(0, "jump2", true);
+          //         break;
+          //     }
+          //   }
+          // });
+          // player.animationState.setAnimation(0, "animation", true);
+        },
+      });
+    </script>
+  </body>
+</html>

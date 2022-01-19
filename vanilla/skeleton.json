@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "gpvzDHqnzYc",
+	"spine": "4.0.58",
+	"x": -61,
+	"y": -92.5,
+	"width": 179,
+	"height": 171,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "skeleton", "bone": "root", "attachment": "skeleton" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"skeleton": {
+				"skeleton": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 118, -92.5, -61, -92.5, -61, 78.5, 118, 78.5 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 179,
+					"height": 171
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{},
+					{ "time": 1, "value": 60 }
+				],
+				"translate": [
+					{},
+					{ "time": 1, "x": -616.53 }
+				],
+				"scale": [
+					{},
+					{ "time": 1, "x": 2, "y": 2 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"skeleton": {
+					"skeleton": [
+						{},
+						{
+							"time": 1,
+							"vertices": [ -41.09576, 52.5487, 0, 0, -79.43204, 122.33673 ]
+						}
+					]
+				}
+			}
+		}
+	}
+}
+}
